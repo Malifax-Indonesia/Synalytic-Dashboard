@@ -99,7 +99,8 @@ export class RenderingService {
         const darkMode =
           (settings.user?.['theme:darkMode']?.userValue ??
             uiSettings.getOverrideOrDefault('theme:darkMode')) ||
-          false;
+          // false;
+          true; // Override its default theme
 
         // At the very least, the schema should define a default theme; the '' will be unreachable
         const themeVersion =

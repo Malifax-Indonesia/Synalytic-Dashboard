@@ -1,3 +1,98 @@
+// Colors
+
+// Brand / Primary UI Colors
+$euiColorPrimary:   #A855F7;   // Bright purple
+$euiColorSecondary: #6366F1;   // Indigo
+$euiColorAccent:    #EC4899;   // Pink
+
+// Status Colors
+$euiColorSuccess:   #22C55E;
+$euiColorWarning:   #FACC15;
+$euiColorDanger:    #FB7185;
+
+// Visualization Palette (Charts)
+$euiColorVis0: #A855F7;
+$euiColorVis1: #6366F1;
+$euiColorVis2: #EC4899;
+$euiColorVis3: #4F46E5;
+$euiColorVis4: #F472B6;
+$euiColorVis5: #C4B5FD;
+$euiColorVis6: #7C3AED;
+$euiColorVis7: #F97316;
+$euiColorVis8: #22C55E;
+$euiColorVis9: #0EA5E9;
+
+// Fonts
+/* =======================================
+   Synalytic Typography
+   Headers → Poppins
+   Body   → Montserrat
+   ======================================= */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../../server/core_app/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../server/core_app/assets/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+$ouiFontFamily: #{"'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"} !default;
+
+/* BODY TEXT */
+body,
+.euiText,
+.euiTextColorDefault,
+.euiTextColorSubdued,
+.euiDescriptionList,
+.euiTable,
+.euiBasicTable,
+.euiDataGrid,
+.euiFormRow,
+.euiFieldText,
+.euiFieldNumber,
+.euiFieldPassword,
+.euiFieldSearch,
+.euiFieldText--inGroup,
+.euiLink {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif !important;
+}
+
+/* HEADERS / TITLES / NAV */
+h1, h2, h3, h4, h5, h6,
+.euiTitle,
+.euiTitle--large,
+.euiTitle--medium,
+.euiTitle--small,
+.euiPageTitle,
+.euiPageHeader,
+.euiStat__title,
+.euiCard__title,
+.euiAccordion__button,
+.euiTab,
+.euiBreadcrumb,
+.euiButton,
+.euiButton--text,
+.euiButtonContent,
+.euiSideNavItemButton,
+.euiPageSidebar__item {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+}
+
+/* Optional: slightly stronger for big titles */
+h1, h2, .euiTitle--large {
+  font-weight: 600;
+}
+
 @mixin flex-parent($grow: 1, $shrink: 1, $basis: auto, $direction: column) {
   flex: $grow $shrink $basis;
   display: flex;

@@ -58,6 +58,7 @@ import {
   ChromeNavGroupServiceSetupContract,
   ChromeNavGroupServiceStartContract,
 } from './nav_group';
+import { Footer } from './ui/footer/footer';
 
 export { ChromeNavControls, ChromeRecentlyAccessed, ChromeDocTitle };
 
@@ -324,6 +325,19 @@ export class ChromeService {
         />
       ),
 
+      getFooterComponent: () => (
+        <Footer 
+          loadingCount$={http.getLoadingCount$()}
+          application={application}
+          basePath={http.basePath}
+          homeHref={application.getUrlForApp('wz-home')}
+          opensearchDashboardsVersion={injectedMetadata.getWazuhVersion()}
+          branding={injectedMetadata.getBranding()}
+          logos={logos}
+          darkmode={uiSettings.get('theme:darkMode')}
+        />
+      ),
+
       setAppTitle: (appTitle: string) => appTitle$.next(appTitle),
 
       getIsVisible$: () => this.isVisible$,
@@ -551,4 +565,5 @@ export interface InternalChromeStart extends ChromeStart {
    * @internal
    */
   getHeaderComponent(): JSX.Element;
+  getFooterComponent(): JSX.Element;
 }

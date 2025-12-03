@@ -55,6 +55,7 @@ interface StartDeps {
 export class RenderingService {
   start({ application, chrome, overlays, targetDomElement }: StartDeps) {
     const chromeUi = chrome.getHeaderComponent();
+    const footerUi = chrome.getFooterComponent();
     const appUi = application.getComponent();
     const bannerUi = overlays.banners.getComponent();
 
@@ -78,6 +79,8 @@ export class RenderingService {
               <AppContainer classes$={chrome.getApplicationClasses$()}>{appUi}</AppContainer>
             </div>
           </AppWrapper>
+
+          {footerUi}
         </div>
       </I18nProvider>,
       targetDomElement
