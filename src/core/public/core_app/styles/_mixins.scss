@@ -29,23 +29,24 @@ $euiColorVis9: #0EA5E9;
    Body   → Montserrat
    ======================================= */
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('../../../server/core_app/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Poppins';
+//   src: url('../../../server/core_app/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+//   font-weight: 400;
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../../../server/core_app/assets/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('../../../server/core_app/assets/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+//   font-weight: 400;
+//   font-display: swap;
+// }
 
-$ouiFontFamily: #{"'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"} !default;
+// $ouiFontFamily: #{"'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"} !default;
+$ouiFontFamily: #{"'Montserrat', -apple-system, BlinkMacSystemFont"} !default;
 
-/* BODY TEXT */
+// /* BODY TEXT */
 body,
 .euiText,
 .euiTextColorDefault,
@@ -60,12 +61,16 @@ body,
 .euiFieldPassword,
 .euiFieldSearch,
 .euiFieldText--inGroup,
+// .euiLink {
+//   font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+//     Helvetica, Arial, sans-serif !important;
+// }
 .euiLink {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif !important;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont !important;
 }
 
-/* HEADERS / TITLES / NAV */
+
+// // /* HEADERS / TITLES / NAV */
 h1, h2, h3, h4, h5, h6,
 .euiTitle,
 .euiTitle--large,
@@ -82,13 +87,17 @@ h1, h2, h3, h4, h5, h6,
 .euiButton--text,
 .euiButtonContent,
 .euiSideNavItemButton,
+// .euiPageSidebar__item {
+//   font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+//     Helvetica, Arial, sans-serif !important;
+//   font-weight: 500;
+// }
 .euiPageSidebar__item {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif !important;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont !important;
   font-weight: 500;
 }
 
-/* Optional: slightly stronger for big titles */
+// /* Optional: slightly stronger for big titles */
 h1, h2, .euiTitle--large {
   font-weight: 600;
 }

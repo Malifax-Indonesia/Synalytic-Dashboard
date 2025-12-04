@@ -46,6 +46,7 @@ const createSetupContractMock = () => {
 
 const createStartContractMock = () => {
   const startContract: DeeplyMockedKeys<InternalChromeStart> = {
+    getFooterComponent: jest.fn(),
     getHeaderComponent: jest.fn(),
     navLinks: {
       getNavLinks$: jest.fn(),

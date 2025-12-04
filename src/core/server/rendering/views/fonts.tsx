@@ -474,6 +474,198 @@ export const Fonts: FunctionComponent<Props> = ({ url, theme }) => {
     ],
   };
 
+  const montserrat: FontFace = {
+    family: 'Montserrat',
+    variants: [
+      {
+        style: 'normal',
+        weight: 100,
+        sources: [`${url}/fonts/montserrat/Montserrat-Thin.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 100,
+        sources: [`${url}/fonts/montserrat/Montserrat-ThinItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        sources: [`${url}/fonts/montserrat/Montserrat-ExtraLight.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        sources: [`${url}/fonts/montserrat/Montserrat-ExtraLightItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        sources: [`${url}/fonts/montserrat/Montserrat-Light.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        sources: [`${url}/fonts/montserrat/Montserrat-LightItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        sources: [`${url}/fonts/montserrat/Montserrat-Regular.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        sources: [`${url}/fonts/montserrat/Montserrat-Italic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        sources: [`${url}/fonts/montserrat/Montserrat-Medium.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        sources: [`${url}/fonts/montserrat/Montserrat-MediumItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        sources: [`${url}/fonts/montserrat/Montserrat-SemiBold.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        sources: [`${url}/fonts/montserrat/Montserrat-SemiBoldItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        sources: [`${url}/fonts/montserrat/Montserrat-Bold.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        sources: [`${url}/fonts/montserrat/Montserrat-BoldItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        sources: [`${url}/fonts/montserrat/Montserrat-ExtraBold.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        sources: [`${url}/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        sources: [`${url}/fonts/montserrat/Montserrat-Black.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        sources: [`${url}/fonts/montserrat/Montserrat-BlackItalic.ttf`],
+      },
+    ],
+  };
+
+  const poppins: FontFace = {
+    family: 'Poppins',
+    variants: [
+      {
+        style: 'normal',
+        weight: 100,
+        sources: [`${url}/fonts/poppins/Poppins-Thin.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 100,
+        sources: [`${url}/fonts/poppins/Poppins-ThinItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        sources: [`${url}/fonts/poppins/Poppins-ExtraLight.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        sources: [`${url}/fonts/poppins/Poppins-ExtraLightItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        sources: [`${url}/fonts/poppins/Poppins-Light.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        sources: [`${url}/fonts/poppins/Poppins-LightItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        sources: [`${url}/fonts/poppins/Poppins-Regular.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        sources: [`${url}/fonts/poppins/Poppins-Italic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        sources: [`${url}/fonts/poppins/Poppins-Medium.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        sources: [`${url}/fonts/poppins/Poppins-MediumItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        sources: [`${url}/fonts/poppins/Poppins-SemiBold.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        sources: [`${url}/fonts/poppins/Poppins-SemiBoldItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        sources: [`${url}/fonts/poppins/Poppins-Bold.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        sources: [`${url}/fonts/poppins/Poppins-BoldItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        sources: [`${url}/fonts/poppins/Poppins-ExtraBold.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        sources: [`${url}/fonts/poppins/Poppins-ExtraBoldItalic.ttf`],
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        sources: [`${url}/fonts/poppins/Poppins-Black.ttf`],
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        sources: [`${url}/fonts/poppins/Poppins-BlackItalic.ttf`],
+      },
+    ],
+  };
+
   /*
   Single variable font.
 
@@ -532,16 +724,19 @@ export const Fonts: FunctionComponent<Props> = ({ url, theme }) => {
       url('${url}/fonts/inter_ui/Inter-UI-italic.var.woff2') format('woff2');
   }
   */
-  const fontText = theme === 'v7' ? interUi : sourceSans3;
-  const fontCode = theme === 'v7' ? roboto : sourceCodePro;
+
+  /* Default */
+  // const fontText = theme === 'v7' ? interUi : sourceSans3;
+  // const fontCode = theme === 'v7' ? roboto : sourceCodePro;
+
+  const fontText = montserrat;
+  const fontCode = poppins;
   const fontsDefinitionRules = [fontText, fontCode]
     .flatMap(({ family, variants }) =>
       variants.map(({ style, weight, format, sources, unicodeRange }) => {
         const src = sources
           .map((source) =>
-            source.startsWith(url)
-              ? `url('${source}') format('${format || source.split('.').pop()}')`
-              : `local('${source}')`
+            source.startsWith(url) ? `url('${source}') format('truetype')` : `local('${source}')`
           )
           .join(', ');
 
